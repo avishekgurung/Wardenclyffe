@@ -10,8 +10,8 @@ import org.apache.logging.log4j.Logger;
 import java.util.Properties;
 import java.util.Random;
 
-public class SpecificPartitionProducer {
-    private static final Logger log = org.apache.logging.log4j.LogManager.getLogger(SpecificPartitionProducer.class);
+public class ConstantPartitioning {
+    private static final Logger log = org.apache.logging.log4j.LogManager.getLogger(ConstantPartitioning.class);
     public static void main(String[] args) throws Exception {
         Properties properties = new Properties();
         properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, Configuration.BOOTSTRAP_SERVERS);
